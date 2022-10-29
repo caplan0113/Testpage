@@ -17,6 +17,8 @@
 <script type="module">
   const videoElement = document.getElementsByClassName('input_video')[0];
   const canvasElement = document.getElementsByClassName('output_canvas')[0];
+	canvasElement.width = videoElement.clientWidth;
+	canvasElement.height = videoElement.clientHeight;
   const canvasCtx = canvasElement.getContext('2d');
   
   function onResults(results) {
