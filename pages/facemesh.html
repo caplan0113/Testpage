@@ -56,8 +56,8 @@
     onFrame: async () => {
       await faceMesh.send({image: videoElement});
     },
-    width: 1280,
-    height: 720
+    width: videoElement.clientWidth,
+    height: videoElement.clientHeight
   });
   camera.start();
   </script>
